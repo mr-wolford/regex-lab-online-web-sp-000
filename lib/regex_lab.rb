@@ -13,7 +13,6 @@ end
 def first_word_capitalized_and_ends_with_punctuation?(text)
   condition_1=!!text.match(/^[A-Z]/)
   condition_2=!!text.match(/[.?!]$/)
-  condition_3=!
   condition_1 == condition_2
 end
 
