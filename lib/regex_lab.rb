@@ -11,9 +11,9 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  !!text.match(/^[A-Z]/)
-  !!text.match(/[.?!]$/)
-  !text.match(/^[a-z]/)
+  condition_1=!!text.match(/^[A-Z]/)
+  condition_2=!!text.match(/[.?!]$/)
+  !!condition_1 = condition_2
 end
 
 def valid_phone_number?(phone)
